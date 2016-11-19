@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/storer"
 )
 
 const (

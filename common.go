@@ -4,8 +4,8 @@ import (
 	"io"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1/config"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4/config"
+	"gopkg.in/svagner/go-git.v4/plumbing/storer"
 )
 
 // Storer is a generic storage of objects, references and any information

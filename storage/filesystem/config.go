@@ -3,9 +3,9 @@ package filesystem
 import (
 	"os"
 
-	"gopkg.in/svagner/go-git.v4.1/config"
-	gitconfig "gopkg.in/svagner/go-git.v4.1/plumbing/format/config"
-	"gopkg.in/svagner/go-git.v4.1/storage/filesystem/internal/dotgit"
+	"gopkg.in/svagner/go-git.v4/config"
+	gitconfig "gopkg.in/svagner/go-git.v4/plumbing/format/config"
+	"gopkg.in/svagner/go-git.v4/storage/filesystem/internal/dotgit"
 )
 
 const (

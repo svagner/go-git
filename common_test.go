@@ -6,13 +6,13 @@ import (
 	"os"
 	"testing"
 
-	"gopkg.in/svagner/go-git.v4.1/fixtures"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packfile"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
-	"gopkg.in/svagner/go-git.v4.1/storage/filesystem"
+	"gopkg.in/svagner/go-git.v4/fixtures"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/client"
+	"gopkg.in/svagner/go-git.v4/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packfile"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4/storage/filesystem"
 
 	. "gopkg.in/check.v1"
 )

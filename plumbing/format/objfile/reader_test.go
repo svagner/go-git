@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 
 	. "gopkg.in/check.v1"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing"
 )
 
 type SuiteReader struct{}

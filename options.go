@@ -3,9 +3,9 @@ package git
 import (
 	"errors"
 
-	"gopkg.in/svagner/go-git.v4.1/config"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4/config"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/client/common"
 )
 
 const (

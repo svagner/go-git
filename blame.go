@@ -8,8 +8,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"gopkg.in/svagner/go-git.v4.1/diff"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4/diff"
+	"gopkg.in/svagner/go-git.v4/plumbing"
 )
 
 type Blame struct {

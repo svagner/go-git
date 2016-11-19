@@ -5,8 +5,8 @@ package ulreq
 import (
 	"time"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp"
 )
 
 // UlReq values represent the information transmitted on a

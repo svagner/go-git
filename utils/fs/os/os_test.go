@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	. "gopkg.in/check.v1"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs/os"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs/test"
+	"gopkg.in/svagner/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4/utils/fs/test"
 )
 
 func Test(t *testing.T) { TestingT(t) }

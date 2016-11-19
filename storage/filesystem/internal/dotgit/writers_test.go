@@ -8,8 +8,8 @@ import (
 	"os"
 	"strconv"
 
-	"gopkg.in/svagner/go-git.v4.1/fixtures"
-	osfs "gopkg.in/svagner/go-git.v4.1/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4/fixtures"
+	osfs "gopkg.in/svagner/go-git.v4/utils/fs/os"
 
 	. "gopkg.in/check.v1"
 )

@@ -1,6 +1,6 @@
 package idxfile
 
-import "gopkg.in/svagner/go-git.v4.1/plumbing"
+import "gopkg.in/svagner/go-git.v4/plumbing"
 
 const (
 	// VersionSupported is the only idx version supported.

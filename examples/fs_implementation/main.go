@@ -15,9 +15,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1"
-	"gopkg.in/svagner/go-git.v4.1/storage/filesystem"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs"
+	"gopkg.in/svagner/go-git.v4"
+	"gopkg.in/svagner/go-git.v4/storage/filesystem"
+	"gopkg.in/svagner/go-git.v4/utils/fs"
 )
 
 func main() {

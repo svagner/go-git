@@ -8,10 +8,10 @@ import (
 	"io"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/advrefs"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/pktline"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/ulreq"
+	"gopkg.in/svagner/go-git.v4/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp/advrefs"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp/pktline"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp/ulreq"
 
 	"golang.org/x/crypto/ssh"
 )

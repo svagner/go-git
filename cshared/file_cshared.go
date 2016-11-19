@@ -5,8 +5,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"gopkg.in/svagner/go-git.v4.1"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4"
+	"gopkg.in/svagner/go-git.v4/plumbing"
 )
 
 //export c_File_get_Name

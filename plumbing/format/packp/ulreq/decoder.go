@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/pktline"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp/pktline"
 )
 
 const (

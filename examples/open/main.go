@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"gopkg.in/svagner/go-git.v4.1"
+	"gopkg.in/svagner/go-git.v4"
 )
 
 func main() {

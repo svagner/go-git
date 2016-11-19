@@ -2,8 +2,8 @@
 package filesystem
 
 import (
-	"gopkg.in/svagner/go-git.v4.1/storage/filesystem/internal/dotgit"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs"
+	"gopkg.in/svagner/go-git.v4/storage/filesystem/internal/dotgit"
+	"gopkg.in/svagner/go-git.v4/utils/fs"
 )
 
 // Storage is an implementation of git.Storer that stores data on disk in the

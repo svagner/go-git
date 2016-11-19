@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"io"
 
-	"gopkg.in/svagner/go-git.v4.1/config"
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packfile"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4/config"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/client"
+	"gopkg.in/svagner/go-git.v4/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packfile"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4/plumbing/storer"
 )
 
 var NoErrAlreadyUpToDate = errors.New("already up-to-date")

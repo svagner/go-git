@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing"
 )
 
 var (

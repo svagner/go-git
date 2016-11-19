@@ -5,11 +5,11 @@ import (
 	"io"
 	"sync/atomic"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/idxfile"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/objfile"
-	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packfile"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/idxfile"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/objfile"
+	"gopkg.in/svagner/go-git.v4/plumbing/format/packfile"
+	"gopkg.in/svagner/go-git.v4/utils/fs"
 )
 
 type PackWriter struct {

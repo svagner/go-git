@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4/plumbing/storer"
 )
 
 // File represents git file objects.

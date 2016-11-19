@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4/plumbing"
 )
 
 // Read reads structured binary data from r into data. Bytes are read and

@@ -10,8 +10,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/utils/binary"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/utils/binary"
 )
 
 var (

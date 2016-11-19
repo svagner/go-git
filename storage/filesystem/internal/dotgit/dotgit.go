@@ -9,8 +9,8 @@ import (
 	"os"
 	"strings"
 
-	"gopkg.in/svagner/go-git.v4.1/plumbing"
-	"gopkg.in/svagner/go-git.v4.1/utils/fs"
+	"gopkg.in/svagner/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4/utils/fs"
 )
 
 const (

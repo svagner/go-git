@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/svagner/go-git.v4.1/utils/fs"
+	"gopkg.in/svagner/go-git.v4/utils/fs"
 )
 
 const separator = '/'

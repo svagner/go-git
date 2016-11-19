@@ -8,7 +8,7 @@ import (
 	"io"
 	"time"
 
-	"gopkg.in/svagner/go-git.v4.1/utils/binary"
+	"gopkg.in/svagner/go-git.v4/utils/binary"
 )
 
 var (

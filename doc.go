@@ -33,4 +33,4 @@
 //   fmt.Println(commit)
 //  }
 // }
-package git // import "gopkg.in/svagner/go-git.v4.1"
+package git // import "gopkg.in/svagner/go-git.v4"
