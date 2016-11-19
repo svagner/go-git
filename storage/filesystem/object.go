@@ -4,14 +4,14 @@ import (
 	"io"
 	"os"
 
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/idxfile"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/objfile"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packfile"
-	"gopkg.in/src-d/go-git.v4/plumbing/storer"
-	"gopkg.in/src-d/go-git.v4/storage/filesystem/internal/dotgit"
-	"gopkg.in/src-d/go-git.v4/storage/memory"
-	"gopkg.in/src-d/go-git.v4/utils/fs"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/idxfile"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/objfile"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packfile"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4.1/storage/filesystem/internal/dotgit"
+	"gopkg.in/svagner/go-git.v4.1/storage/memory"
+	"gopkg.in/svagner/go-git.v4.1/utils/fs"
 )
 
 type ObjectStorage struct {

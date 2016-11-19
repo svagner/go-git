@@ -4,9 +4,9 @@ import (
 	"io/ioutil"
 	stdos "os"
 
-	"gopkg.in/src-d/go-git.v4/fixtures"
-	"gopkg.in/src-d/go-git.v4/storage/filesystem/internal/dotgit"
-	"gopkg.in/src-d/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4.1/fixtures"
+	"gopkg.in/svagner/go-git.v4.1/storage/filesystem/internal/dotgit"
+	"gopkg.in/svagner/go-git.v4.1/utils/fs/os"
 
 	. "gopkg.in/check.v1"
 )

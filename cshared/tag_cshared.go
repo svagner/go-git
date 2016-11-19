@@ -5,10 +5,10 @@ import (
 	"C"
 	"io"
 
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4.1"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
 )
-import "gopkg.in/src-d/go-git.v4/plumbing/storer"
+import "gopkg.in/svagner/go-git.v4.1/plumbing/storer"
 
 func c_Tag_get_Hash(t uint64) *C.char {
 	obj, ok := GetObject(Handle(t))

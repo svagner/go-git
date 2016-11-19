@@ -11,12 +11,12 @@ import (
 	"regexp"
 	"strings"
 
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp/advrefs"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp/pktline"
-	"gopkg.in/src-d/go-git.v4/plumbing/storer"
-	"gopkg.in/src-d/go-git.v4/storage/memory"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/advrefs"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/pktline"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4.1/storage/memory"
 )
 
 var (
@@ -45,7 +45,7 @@ type Endpoint url.URL
 
 var (
 	isSchemeRegExp   = regexp.MustCompile("^[^:]+://")
-	scpLikeUrlRegExp = regexp.MustCompile("^(?P<user>[^@]+@)?(?P<host>[^:]+):/?(?P<path>.+)$")
+	scpLikeUrlRegExp = regexp.MustCompile("^(?P<user>[^@]+@)?(?P<host>[^/]+)/?(?P<path>.+)$")
 )
 
 func NewEndpoint(endpoint string) (Endpoint, error) {

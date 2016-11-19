@@ -8,10 +8,10 @@ import (
 	"io"
 	"strings"
 
-	"gopkg.in/src-d/go-git.v4/plumbing/client/common"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp/advrefs"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp/pktline"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp/ulreq"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/advrefs"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/pktline"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp/ulreq"
 
 	"golang.org/x/crypto/ssh"
 )
@@ -52,9 +52,10 @@ func (s *GitUploadPackService) Connect() error {
 	if s.connected {
 		return ErrAlreadyConnected
 	}
-
-	if err := s.setAuthFromEndpoint(); err != nil {
-		return err
+	if s.auth.clientConfig() == nil {
+		if err := s.setAuthFromEndpoint(); err != nil {
+			return err
+		}
 	}
 
 	var err error
@@ -105,28 +106,29 @@ func (s *GitUploadPackService) SetAuth(auth common.AuthMethod) error {
 // Info returns the GitUploadPackInfo of the repository. The client must be
 // connected with the repository (using the ConnectWithAuth() method) before
 // using this method.
-func (s *GitUploadPackService) Info() (i *common.GitUploadPackInfo, err error) {
+func (s *GitUploadPackService) Info() (info *common.GitUploadPackInfo, err error) {
 	if !s.connected {
 		return nil, ErrNotConnected
 	}
 
-	session, err := s.client.NewSession()
+	session, i, o, _, err := openSSHSession(s.client, s.getCommand())
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("cannot open SSH session: %s", err)
 	}
+
+
 	defer func() {
 		// the session can be closed by the other endpoint,
 		// therefore we must ignore a close error.
 		_ = session.Close()
 	}()
 
-	out, err := session.Output(s.getCommand())
-	if err != nil {
+	if err := sendEnd(i); err != nil {
 		return nil, err
 	}
 
-	i = common.NewGitUploadPackInfo()
-	return i, i.Decode(bytes.NewReader(out))
+	info = common.NewGitUploadPackInfo()
+	return info, info.Decode(o)
 }
 
 // Disconnect the SSH client.
@@ -260,6 +262,11 @@ func sendDone(w io.Writer) error {
 	e := pktline.NewEncoder(w)
 
 	return e.Encodef("done\n")
+}
+
+func sendEnd(w io.Writer) error {
+	e := pktline.NewEncoder(w)
+	return e.Encodef("")
 }
 
 func readNAK(r io.Reader) error {

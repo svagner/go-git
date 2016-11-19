@@ -4,10 +4,10 @@ import (
 	"io"
 	"testing"
 
-	"gopkg.in/src-d/go-git.v4/fixtures"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/idxfile"
-	"gopkg.in/src-d/go-git.v4/storage/memory"
+	"gopkg.in/svagner/go-git.v4.1/fixtures"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/idxfile"
+	"gopkg.in/svagner/go-git.v4.1/storage/memory"
 
 	. "gopkg.in/check.v1"
 )

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"gopkg.in/src-d/go-git.v4/fixtures"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	osfs "gopkg.in/src-d/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4.1/fixtures"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	osfs "gopkg.in/svagner/go-git.v4.1/utils/fs/os"
 
 	. "gopkg.in/check.v1"
 )

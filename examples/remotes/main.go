@@ -5,9 +5,9 @@ import (
 
 	"github.com/fatih/color"
 
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/config"
-	"gopkg.in/src-d/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4.1"
+	"gopkg.in/svagner/go-git.v4.1/config"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
 )
 
 func main() {

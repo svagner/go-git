@@ -3,8 +3,8 @@ package filesystem
 import (
 	"testing"
 
-	"gopkg.in/src-d/go-git.v4/storage/test"
-	"gopkg.in/src-d/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4.1/storage/test"
+	"gopkg.in/svagner/go-git.v4.1/utils/fs/os"
 
 	. "gopkg.in/check.v1"
 )

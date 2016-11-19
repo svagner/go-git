@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
 
 	. "gopkg.in/check.v1"
 )

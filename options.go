@@ -3,9 +3,9 @@ package git
 import (
 	"errors"
 
-	"gopkg.in/src-d/go-git.v4/config"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4.1/config"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
 )
 
 const (
@@ -26,6 +26,8 @@ type CloneOptions struct {
 	Auth common.AuthMethod
 	// Name of the remote to be added, by default `origin`
 	RemoteName string
+	// Auth method
+	Auth common.AuthMethod
 	// Remote branch to clone
 	ReferenceName plumbing.ReferenceName
 	// Fetch only ReferenceName if true
@@ -55,6 +57,8 @@ func (o *CloneOptions) Validate() error {
 type PullOptions struct {
 	// Name of the remote to be pulled
 	RemoteName string
+	// Auth method
+	Auth common.AuthMethod
 	// Remote branch to clone
 	ReferenceName plumbing.ReferenceName
 	// Fetch only ReferenceName if true

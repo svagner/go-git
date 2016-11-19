@@ -6,7 +6,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"gopkg.in/src-d/go-git.v4/utils/fs"
+	"gopkg.in/svagner/go-git.v4.1/utils/fs"
 )
 
 // OS a filesystem base on the os filesystem

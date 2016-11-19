@@ -7,7 +7,7 @@ import (
 
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"
-	"gopkg.in/src-d/go-git.v4/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
 )
 
 // AuthMethod is the interface all auth methods for the ssh client

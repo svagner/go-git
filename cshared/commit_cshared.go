@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"unsafe"
 
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/plumbing"
+	"gopkg.in/svagner/go-git.v4.1"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
 )
-import "gopkg.in/src-d/go-git.v4/plumbing/storer"
+import "gopkg.in/svagner/go-git.v4.1/plumbing/storer"
 
 //export c_Commit_get_Hash
 func c_Commit_get_Hash(c uint64) *C.char {

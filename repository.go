@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"gopkg.in/src-d/go-git.v4/config"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/storer"
-	"gopkg.in/src-d/go-git.v4/storage/filesystem"
-	"gopkg.in/src-d/go-git.v4/storage/memory"
-	osfs "gopkg.in/src-d/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4.1/config"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4.1/storage/filesystem"
+	"gopkg.in/svagner/go-git.v4.1/storage/memory"
+	osfs "gopkg.in/svagner/go-git.v4.1/utils/fs/os"
 )
 
 var (
@@ -146,7 +146,7 @@ func (r *Repository) Clone(o *CloneOptions) error {
 		return err
 	}
 
-	if err = remote.Connect(); err != nil {
+	if err = remote.Connect(o.Auth); err != nil {
 		return err
 	}
 
@@ -236,7 +236,7 @@ func (r *Repository) Pull(o *PullOptions) error {
 		return err
 	}
 
-	if err = remote.Connect(); err != nil {
+	if err = remote.Connect(o.Auth); err != nil {
 		return err
 	}
 
@@ -247,7 +247,7 @@ func (r *Repository) Pull(o *PullOptions) error {
 		return err
 	}
 
-	if err = remote.Connect(); err != nil {
+	if err = remote.Connect(o.Auth); err != nil {
 		return err
 	}
 

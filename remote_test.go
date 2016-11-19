@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"os"
 
-	"gopkg.in/src-d/go-git.v4/config"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/storer"
-	"gopkg.in/src-d/go-git.v4/storage/filesystem"
-	"gopkg.in/src-d/go-git.v4/storage/memory"
-	osfs "gopkg.in/src-d/go-git.v4/utils/fs/os"
+	"gopkg.in/svagner/go-git.v4.1/config"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4.1/storage/filesystem"
+	"gopkg.in/svagner/go-git.v4.1/storage/memory"
+	osfs "gopkg.in/svagner/go-git.v4.1/utils/fs/os"
 
 	. "gopkg.in/check.v1"
 )

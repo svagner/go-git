@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"io"
 
-	"gopkg.in/src-d/go-git.v4/config"
-	"gopkg.in/src-d/go-git.v4/plumbing"
-	"gopkg.in/src-d/go-git.v4/plumbing/client"
-	"gopkg.in/src-d/go-git.v4/plumbing/client/common"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packfile"
-	"gopkg.in/src-d/go-git.v4/plumbing/format/packp"
-	"gopkg.in/src-d/go-git.v4/plumbing/storer"
+	"gopkg.in/svagner/go-git.v4.1/config"
+	"gopkg.in/svagner/go-git.v4.1/plumbing"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packfile"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/format/packp"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/storer"
 )
 
 var NoErrAlreadyUpToDate = errors.New("already up-to-date")
@@ -36,15 +36,15 @@ func (r *Remote) Config() *config.RemoteConfig {
 }
 
 // Connect with the endpoint
-func (r *Remote) Connect() error {
-	if err := r.connectUploadPackService(); err != nil {
+func (r *Remote) Connect(auth common.AuthMethod) error {
+	if err := r.connectUploadPackService(auth); err != nil {
 		return err
 	}
 
 	return r.retrieveUpInfo()
 }
 
-func (r *Remote) connectUploadPackService() error {
+func (r *Remote) connectUploadPackService(auth common.AuthMethod) error {
 	endpoint, err := common.NewEndpoint(r.c.URL)
 	if err != nil {
 		return err
@@ -54,7 +54,7 @@ func (r *Remote) connectUploadPackService() error {
 	if err != nil {
 		return err
 	}
-
+	r.upSrv.SetAuth(auth)
 	return r.upSrv.Connect()
 }
 

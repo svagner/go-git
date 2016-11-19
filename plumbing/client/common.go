@@ -16,9 +16,9 @@ package clients
 import (
 	"fmt"
 
-	"gopkg.in/src-d/go-git.v4/plumbing/client/common"
-	"gopkg.in/src-d/go-git.v4/plumbing/client/http"
-	"gopkg.in/src-d/go-git.v4/plumbing/client/ssh"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/common"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/http"
+	"gopkg.in/svagner/go-git.v4.1/plumbing/client/ssh"
 )
 
 type GitUploadPackServiceFactory func(common.Endpoint) common.GitUploadPackService
