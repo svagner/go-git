@@ -26,8 +26,6 @@ type CloneOptions struct {
 	Auth common.AuthMethod
 	// Name of the remote to be added, by default `origin`
 	RemoteName string
-	// Auth method
-	Auth common.AuthMethod
 	// Remote branch to clone
 	ReferenceName plumbing.ReferenceName
 	// Fetch only ReferenceName if true
